@@ -1,0 +1,41 @@
+footer {
+    background-color: $color-dark;
+    color: $color-white;
+    padding: $spacing-md;
+  }
+  
+  .footer-grid {
+    @include flex(row, space-between);
+    gap: $spacing-md;
+  
+    h3 {
+      margin-bottom: $spacing-sm;
+    }
+  
+    ul {
+      list-style: none;
+      padding: 0;
+      
+      li {
+        margin-top: $spacing-sm;
+        
+        a {
+          color: $color-white;
+          text-decoration: none;
+          transition: color 0.3s;
+          
+          &:hover {
+            color: $color-accent;
+          }
+        }
+      }
+    }
+  }
+  
+  .redes-sociales ul {
+    @include flex(row, space-around);
+  }
+  
+  .copyright {
+    align-self: center;
+  }

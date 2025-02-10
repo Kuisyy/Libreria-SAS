@@ -1,0 +1,18 @@
+// index.scss
+// Abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// Base
+@import 'base/base';
+
+// Components
+@import 'components/header';
+@import 'components/navigation';
+@import 'components/footer';
+
+// Layout
+@import 'layout/responsive';
+
+// Pages
+@import 'pages/home';

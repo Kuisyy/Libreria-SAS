@@ -1,0 +1,26 @@
+.container {
+    display: grid;
+    grid-template-columns: 25% 75%;
+  }
+  
+  .categorias {
+    background-color: $color-light-gray;
+    color: $color-primary;
+    padding: $spacing-md;
+  }
+  
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); // 4 columnas por defecto
+    gap: $spacing-md;
+    padding: $spacing-md;
+}
+
+  
+  .producto {
+    @include card;
+    
+    img {
+      width: 50%;
+    }
+  }

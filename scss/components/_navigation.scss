@@ -1,0 +1,46 @@
+nav {
+    background-color: $color-gray;
+    @include flex(row, space-between, center);
+    padding: $spacing-sm $spacing-md;
+    color: $color-white;
+  }
+  
+  .search-bar {
+    @include flex;
+    gap: $spacing-sm;
+    
+    input {
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: $color-light-gray;
+      color: $color-white;
+    }
+    
+    button {
+      background-color: $color-accent;
+      color: $color-white;
+      border: none;
+      padding: 5px $spacing-sm;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+  
+  .menu {
+    list-style: none;
+    @include flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    
+    li a {
+      color: $color-white;
+      text-decoration: none;
+      transition: color 0.3s;
+      
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }

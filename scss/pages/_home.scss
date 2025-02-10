@@ -1,0 +1,42 @@
+#mi-libreria {
+    text-align: center;
+    padding: $spacing-lg;
+    
+    p {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      margin: 0 auto;
+      padding: $spacing-md;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: start;
+    }
+    
+    li {
+      margin-bottom: $spacing-md;
+    }
+  }
+  
+  .productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: $spacing-md;
+    padding: $spacing-md;
+  }
+  
+  .producto {
+    @include card;
+    @include flex(column, space-between);
+    
+    img {
+      width: 25%;
+    }
+    
+    h3 {
+      color: $color-primary;
+    }
+    
+    p {
+      color: $color-white;
+    }
+  }

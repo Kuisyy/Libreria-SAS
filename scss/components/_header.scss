@@ -1,0 +1,15 @@
+header {
+    background-color: $color-dark;
+    color: $color-primary;
+    padding: $spacing-sm $spacing-md;
+    border-bottom: 2px solid $color-gray;
+    
+    img {
+      width: 5%;
+    }
+  }
+  
+  .header-content {
+    @include flex(row, space-between, center);
+  }
+  
